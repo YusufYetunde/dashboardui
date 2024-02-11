@@ -1,0 +1,24 @@
+/*Grid chart*/
+.grid-chart {
+    display: flex;
+    flex-direction: column;
+}
+.grid-chart-content {
+    flex: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .grid-chart {
+       
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+
+@media screen and (max-width:420px) {
+
+}

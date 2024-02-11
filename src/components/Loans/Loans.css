@@ -1,0 +1,69 @@
+/* Loans.css */
+
+/* grid c7 */
+.grid-c7-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.progress-bar .percent canvas {
+  width: 120px; 
+  height: 120px; 
+}
+
+.progress-bar canvas circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--clr-jet);
+  stroke-width: 15;
+  stroke-linecap: round;
+}
+
+.progress-bar canvas circle:last-of-type {
+  stroke-dasharray: 377px;
+  stroke-dashoffset: calc(377px - (377px * var(--percent)) / 168);
+  stroke: var(--clr-pumpkin);
+}
+
+.progress-bar .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-bar .number h3 {
+  font-weight: 200;
+  font-size: 18px; 
+  font-weight: 500;
+}
+
+.progress-bar .number h3 span {
+  font-size: 12px;
+}
+
+.data-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.data-item {
+  margin-bottom: 10px; 
+}
+
+.data-item-value {
+  display: block;
+  font-weight: 600;
+}
